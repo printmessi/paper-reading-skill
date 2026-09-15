@@ -1,0 +1,43 @@
+# 这是“人工可读配置示例”。第一版脚本尽量通过命令参数运行，避免强依赖 YAML 解析库。
+platform: windows
+
+paths:
+  workspace: "D:/Research/research-workspace"
+  obsidian_vault: "D:/Obsidian/ResearchVault"
+  obsidian_research_root: "Research"
+
+zotero:
+  local_api: "http://127.0.0.1:23119/api"
+  library_prefix: "users/0"
+  bbt_json_rpc: "http://127.0.0.1:23119/better-bibtex/json-rpc"
+  copy_pdf_to_workspace: true
+  never_write_sqlite: true
+
+reading:
+  language: "zh-CN"
+  first_term_bilingual: true
+  external_comparison_count: "2-5"
+  use_double_page_locator: true
+  review_has_separate_template: true
+
+obsidian:
+  scan_scope: "topic_only"
+  write_mode: "proposal_then_confirm"
+  yaml_properties: "ask_before_use"
+  maintain_topic_moc: true
+  node_granularity: "reusable_only"
+
+zotero_status_tags:
+  unread: "状态/待读"
+  no: "状态/No"
+  deep: "状态/精读"
+  organize: "状态/整理"
+  done: "状态/已读"
+
+safety:
+  local_first: true
+  minimum_permission: true
+  web_on_demand: true
+  require_user_pdf_for_primary_paper: true
+  never_invent_missing_evidence: true
+  require_confirmation_before_writes: true

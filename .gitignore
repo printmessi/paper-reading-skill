@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log
+
+# 运行时私有配置与缓存
+config.yaml
+runtime/
+cache/
+tmp/
+
+# PDF 和大附件默认不进入 Skill 工程版本库
+*.pdf
+*.zip
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
